@@ -19,13 +19,6 @@ alt="photopgp" style="float:left"/>
 <p>{{deviceInfo | json}}</p>
 -->
 
-<div class="device" [ngSwitch]="deviceType">
-  <pre *ngSwitchCase="'mobile'">Mobile Device</pre>
-  <pre *ngSwitchCase="'tablet'">Tablet Device</pre>
-  <pre *ngSwitchCase="'desktop'">Desktop Device</pre>
-  <pre *ngSwitchDefault>Unknown Device Type</pre>
-</div>
-
 <router-outlet></router-outlet>
 
 <hr/>
