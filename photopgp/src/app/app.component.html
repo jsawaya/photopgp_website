@@ -1,0 +1,65 @@
+<img src="assets/img/photopgp/photoPGP-04-10.png"
+alt="photopgp" style="float:left"/>
+<p style="font-size: 2.75em">PhotoPGP</p>
+<p style="font-size: 1.0em; font-style: italic">The Secure Way To Take Pictures</p>
+
+<hr/>
+<nav>
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+  <a routerLink="/about" routerLinkActive="active">About</a>
+  <a routerLink="/guide" routerLinkActive="active">Guide</a>
+  <a routerLink="/faq" routerLinkActive="active">FAQ</a>
+  <a routerLink="/eula" routerLinkActive="active">EULA</a>
+  <a routerLink="/policy" routerLinkActive="active">Policy</a>
+  <a routerLink="/links" routerLinkActive="active">Links</a>
+</nav>
+<hr/>
+
+<!--
+<p>{{deviceInfo | json}}</p>
+-->
+
+<div class="device" [ngSwitch]="deviceType">
+  <pre *ngSwitchCase="'mobile'">Mobile Device</pre>
+  <pre *ngSwitchCase="'tablet'">Tablet Device</pre>
+  <pre *ngSwitchCase="'desktop'">Desktop Device</pre>
+  <pre *ngSwitchDefault>Unknown Device Type</pre>
+</div>
+
+<router-outlet></router-outlet>
+
+<hr/>
+<nav>
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+  <a routerLink="/about" routerLinkActive="active">About</a>
+  <a routerLink="/guide" routerLinkActive="active">Guide</a>
+  <a routerLink="/faq" routerLinkActive="active">FAQ</a>
+  <a routerLink="/eula" routerLinkActive="active">EULA</a>
+  <a routerLink="/policy" routerLinkActive="active">Policy</a>
+  <a routerLink="/links" routerLinkActive="active">Links</a>
+</nav>
+<hr/>
+
+<br/>
+<p appCopyright></p>
+
+<!--
+
+<div>
+  <h3>Buttons</h3>
+  <app-buttons></app-buttons>
+</div>
+
+<div>
+  <button mat-button (click)="showDialog()">Open dialog</button>
+</div>
+
+
+<app-pipes></app-pipes>
+
+<input appNumeric />
+<div *appPermission="['admin', 'agent']">
+  <h3>This area can be accessed by admins and agents only</h3>
+</div>
+
+-->

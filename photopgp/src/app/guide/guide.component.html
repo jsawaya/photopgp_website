@@ -1,0 +1,392 @@
+<p style="font-size: 2em; padding: 0em 0em 0em 1em;">PhotoPGP Quickstart:</p>
+
+<div style="text-align: center;">
+
+  <app-image-caption imgSrc='assets/img/photopgp/screenshots/intro_tab.png' title='INTRO TAB'
+    caption='This is a quick introduction to PhotoPGP, and why you need it.' format='width200'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/photopgp/screenshots/settings_tab.png' title='SETTINGS TAB'
+    caption='First-time Setup, OpenPGP key features, and many other settings.' format='width200'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/photopgp/screenshots/index_tab.png' title='INDEX TAB'
+    caption='Shows a list of encrypted image files, with thumbnail images (if enabled).' format='width200'>
+  </app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/photopgp/screenshots/action_screen.png' title='ACTION SCREEN'
+    caption='Shows what actions can be performed with this encrypted image.' format='width200'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/photopgp/screenshots/viewer_tab.png' title='VIEWER TAB'
+    caption='Shows selected image, automatically decrypted.' format='width200'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/photopgp/screenshots/camera_tab.png' title='CAMERA TAB'
+    caption='Shows the camera preview.' format='width200'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/photopgp/screenshots/about_tab.png' title='ABOUT TAB'
+    caption='Shows the current version of PhotoPGP, EULA, support libraries, and recent changes.' format='width200'>
+  </app-image-caption>
+
+</div>
+
+<div>
+  <hr />
+  <app-image-caption imgSrc='assets/img/photopgp/screenshots/settings_tab.png' title='' caption='' format='width300'
+    style="float:left"></app-image-caption>
+
+  <div style="padding: 0em 4em;   display: inline-block;">
+    <p class="title">SETTINGS TAB</p>
+
+    <p style="font-weight: bold;">First-Time Setup</p>
+    <ul style="text-align: left;">
+      <li>
+        Allow Device Permissions (Camera and Write_External_Storage).
+      </li>
+      <li>
+        OpenKeychain Installation and Import your private key
+      </li>
+    </ul>
+
+    <p style="font-weight: bold;">OpenPGP Features</p>
+    <ul style="text-align: left;">
+      <li>
+        Select your private key (from those you imported into OpenKeychain).
+      </li>
+      <li>
+        Optional, you can select public keys to authorize recipients to decrypt files.
+      </li>
+      <li>
+        Select your preferred encryption file format - ASCII Armor or PGP binary.
+      </li>
+    </ul>
+
+    <p style="font-weight: bold;">More Features</p>
+    <ul style="text-align: left;">
+      <li>
+        Enable Toast Messages.
+        Enable Vibration.
+        Vintage Device (Lower Resolution).
+      </li>
+      <li>
+        Google SEND action to Gmail or Drive.
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<div>
+  <hr />
+  <app-image-caption imgSrc='assets/img/photopgp/screenshots/index_tab.png' title='INDEX TAB' caption=''
+    format='width300' style="float:left"></app-image-caption>
+
+  <div style="padding: 0em 4em;   display: inline-block; max-width:400px">
+
+    <p class="title">INDEX TAB</p>
+
+    <p style="font-weight: bold;">Click thumbnail/icon to view that selected item.</p>
+
+    <p style="font-weight: bold;">Click description to open the ACTION screen.</p>
+
+    <p style="font-weight: bold;">Select Directory</p>
+    <ul style="text-align: left;">
+      <li>
+        Select Public or Private Directory.
+      </li>
+    </ul>
+
+    <p style="font-weight: bold;">New Folder</p>
+    <ul style="text-align: left;">
+      <li>
+        Creates a new sub-folder in the current directory/folder.
+      </li>
+    </ul>
+
+    <p style="font-weight: bold;">New Drawing</p>
+    <ul style="text-align: left;">
+      <li>
+        Creates a new encrypted drawing file
+      </li>
+    </ul>
+
+    <p style="font-weight: bold;">New Note</p>
+    <ul style="text-align: left;">
+      <li>
+        Creates a new encrypted text file (which may be viewed/edited by selecting the comment icon)
+      </li>
+    </ul>
+
+    <p style="font-weight: bold;">New Photo</p>
+    <ul style="text-align: left;">
+      <li>
+        Creates a new encrypted image file (which may be viewed by selecting image icon)
+      </li>
+      <li>
+        This camera interface is different from the CAMERA tab:
+      </li>
+      <li>
+        Provides standard camera features (zoom, flash), automatic encryption or secure private storage
+      </li>
+      <li>
+        Creates a new encrypted text file (which may be viewed/edited by selecting the comment icon)
+      </li>
+      <li>
+        The CAMERA tab has other features (auto-rotation, picture quality, and orientation data)
+      </li>
+    </ul>
+
+    <p style="font-weight: bold;">Up / Back Button</p>
+    <ul style="text-align: left;">
+      <li>
+        Allows you to traverse back up the directory tree to the parent directory
+      </li>
+    </ul>
+
+    <p style="font-weight: bold;">Supports the following file types:</p>
+    <ul style="text-align: left;">
+      <li>
+        images (jpg/jpeg/png)
+      </li>
+      <li>
+        encrypted images (asc/pgp)
+      </li>
+      <li>
+        notes - encrypted text
+      </li>
+      <li>
+        sub-folders
+      </li>
+      <li>
+        ZIP files
+      </li>
+      <li>
+        keys
+      </li>
+    </ul>
+
+  </div>
+
+  <div style="padding: 0em 4em;   display: inline-block;">
+    <hr />
+    <app-image-caption imgSrc='assets/img/photopgp/screenshots/action_screen.png' title='ACTION SCREEN'
+      caption='Shows what actions can be performed with this encrypted image.    If thumbnail image cache is disabled, you will see the PhotoPGP icon instead'
+      format='width300' style="float:left"></app-image-caption>
+
+    <div style="padding: 0em 4em;   display: inline-block; max-width:400px;">
+
+      <p class="title">ACTION SCREEN</p>
+
+      <p style="font-weight: bold;">TRASH</p>
+      <ul style="text-align: left;">
+        <li>
+          delete image - also deletes an associated note, signature, rotation and meta files
+        </li>
+        <li>
+          delete folder - also deletes any associated note, with option to delete folder contents
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">MOVE</p>
+      <ul style="text-align: left;">
+        <li>
+          Move the item to another directory/folder
+        </li>
+        <li>
+          Across public/private directories - the item will be copied (not moved)
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">NAME</p>
+      <ul style="text-align: left;">
+        <li>
+          Renames the item to a new unique id [date_time_random]
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">CLOSE</p>
+      <ul style="text-align: left;">
+        <li>
+          Close the ACTION screen and return the INDEX (or use back button)
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">NOTE</p>
+      <ul style="text-align: left;">
+        <li>
+          Add/edit encrypted text note to the item
+        </li>
+        <li>
+          You can also sign it, if this is an existing note.
+        </li>
+        <li>
+          If there is a signature, you can verify it and see what key was used to sign it
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">SEND</p>
+      <ul style="text-align: left;">
+        <li>
+          Send the item to GMAIL or Google Drive...
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">ZIP / UNZIP</p>
+      <ul style="text-align: left;">
+        <li>
+          If the selected item is a folder, you can copy it to backup ZIP file
+        </li>
+        <li>
+          If the selected item is a ZIP file, you can restore the archived contents back to a folder
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">DECRYPT / ENCRYPT</p>
+      <ul style="text-align: left;">
+        <li>
+          If the item is an encrypted image (jpg/jpeg/png) you can decrypt it
+        </li>
+        <li>
+          If the item is an image (jpg/jpeg/png), you can encrypt it
+        </li>
+        <li>
+          IMPORTANT: You don't need to decrypt images as the VIEWER tab automatically does this in memory. The only good
+          use case for this is to decrypt an image into the Private PhotoPGP directory, in order to re-encrypt it with
+          the public keys for the recipients of the encrypted image.
+        </li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+
+  <div style="padding: 0em 4em;   display: inline-block;">
+    <hr />
+    <app-image-caption imgSrc='assets/img/photopgp/screenshots/viewer_tab.png' title='VIEWER TAB'
+      caption='Shows selected image, decrypted.' format='width300' style="float:left"></app-image-caption>
+
+    <div style="padding: 0em 4em;   display: inline-block;">
+
+      <p class="title">VIEWER TAB</p>
+
+      <p style="font-weight: bold;">Double-click, pinch and drag gestures to zoom/pan image.</p>
+
+      <p style="font-weight: bold;">Trashcan Icon</p>
+      <ul style="text-align: left;">
+        <li>
+          Deletes this image (then shows the next image).
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">Drawing Icon</p>
+      <ul style="text-align: left;">
+        <li>
+          Add drawing annotion to image.
+        </li>
+        <li>
+          Long-click crops the image and re-encrypts with current key settings.
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">Rotation Icon</p>
+      <ul style="text-align: left;">
+        <li>
+          Rotates the image left or right, also rotates the thumbnail image
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">Security Check Icon</p>
+      <ul style="text-align: left;">
+        <li>
+          Adds a detached signature, or verifies a previous signature
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">Play Action Icon</p>
+      <ul style="text-align: left;">
+        <li>
+          Opens the ACTION screen for this item.
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+
+
+  <div style="padding: 0em 4em;   display: inline-block;">
+    <hr />
+    <app-image-caption imgSrc='assets/img/photopgp/screenshots/camera_tab.png' title='CAMERA TAB'
+      caption='Shows the camera preview.' format='width300' style="float:left"></app-image-caption>
+
+    <div style="padding: 0em 4em;   display: inline-block;">
+
+      <p class="title">CAMERA TAB</p>
+
+      <p style="font-weight: bold;">Click the preview area to capture an encrypted image,
+        or long-click the area below the preview.</p>
+
+      <p style="font-weight: bold;">FORWARD / REVERSE / OFF</p>
+      <ul style="text-align: left;">
+        <li>
+          Select which camera to use.
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">HD Icon</p>
+      <ul style="text-align: left;">
+        <li>
+          Select which resolution
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">Aspect Ratio</p>
+      <ul style="text-align: left;">
+        <li>
+          Select which ratio makes the preview looks best on your device.
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">Picture Quality / Compression</p>
+      <ul style="text-align: left;">
+        <li>
+          Select your preferred picture quality (image size)
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">Preview Size</p>
+      <ul style="text-align: left;">
+        <li>
+          Select the preview window size that looks best.
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">Burst Count</p>
+      <ul style="text-align: left;">
+        <li>
+          Select how many photos you want to take each time you click the shutter button.
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">Focus</p>
+      <ul style="text-align: left;">
+        <li>
+          Select focus to update the preview window.
+        </li>
+      </ul>
+
+      <p style="font-weight: bold;">Shutter Button</p>
+      <ul style="text-align: left;">
+        <li>
+          Select the shutter button, or anywhere on the image, to take photo.
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <hr />
+
+  <p style="font-size: 2.5em; text-align: center; padding: 0em;">Keep Your Private Data Private</p>
+  <p class="title">and share only what you want - in confidence.</p>

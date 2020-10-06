@@ -1,0 +1,11 @@
+a {
+  padding: 10px;
+}
+
+.active {
+  background-color: lightgray;
+}
+
+div {
+  margin: 10px;
+}

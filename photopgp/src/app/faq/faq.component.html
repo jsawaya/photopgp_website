@@ -1,0 +1,112 @@
+<p style="font-size: 2em; padding: 0em 0em 0em 1em;">Frequently Asked Questions</p>
+
+<hr />
+<p class="title">Installation and Setup</p>
+
+<div style="padding: 0em 4em;">
+  <h4>How to install and setup</h4>
+  <ul style="text-align: left;">
+    <li>
+      Before using PhotoPGP you will first need to install OpenKeychain.
+      OpenKeychain is an implementation of OpenPGP for Android (see LINKS) - available from the Google Play Store,
+      F-Droid, or GitHub (as open-source). PhotoPGP uses the openpgp-api service of OpenKeychain for secure key handling
+      and cyptographic support.
+    </li>
+    <li>
+      You will also need to create your own PGP private key (if you don't already have one) for encryption / decryption
+      and signature / verification.
+      There are many ways to create your PGP private key. You can, for example, create your PGP key using Windows or
+      Linux, then copy that key to your phone.
+      Or you can create your key using the OpenKeychain app, then backup your key off your phone.
+    </li>
+  </ul>
+</div>
+
+<div style="padding: 0em 4em;">
+  <h4>Import Keys into OpenKeychain</h4>
+  <ul style="text-align: left;">
+    <li>
+      Two keys are available in the Public PhotoPGP Directory:
+      (1) PhotoPGP Public Key,
+      (2) Demo Private Key (password: "demo").
+    </li>
+    <li>
+      In the INDEX Tab, click on the KEY Icon to import each key into OpenKeychain.
+    </li>
+    <li>
+      If you have the PhotoPGP Full Edition, you will want to download and import more public-keys into OpenKeychain for
+      anyone you want to authorize to decrypt specific photos.
+    </li>
+    <li>
+      Try the Ubuntu Public Keyserver: https://keyserver.ubuntu.com/
+    </li>
+  </ul>
+</div>
+
+<app-image-caption imgSrc='assets/img/photopgp/screenshots/setup-3.png' title='Import Public Key'
+  caption='This screen shows when OpenKeychain has imported the public key. Click the X to return to PhotoPGP, or click the back button.'
+  format='width400'>
+</app-image-caption>
+
+<app-image-caption imgSrc='assets/img/photopgp/screenshots/setup-4.png' title='Import Private Key'
+  caption='This screen shows when OpenKeychain has imported the private key (secret key).' format='width400'>
+</app-image-caption>
+
+<div style="padding: 2em 1em;"> </div>
+<hr />
+<p class="title">How to take pictures</p>
+
+<div style="padding: 0em 4em;">
+  <h4>How to take pictures - Method 1 - Use the INDEX tab, click "ADD PHOTO" icon</h4>
+  <ul style="text-align: left;">
+    <li>
+      Review what keys you have selected in the SETTINGS tab, because one of these keys will be required to view
+      the photograph.
+    </li>
+    <li>
+      Select the directory/folder where you want the encrypted images (set directory, new folder, click folder icon)
+    </li>
+    <li>
+      Click the INDEX tab ADD PHOTO icon to start the standard camera interface - click the shutter button, then click check.
+    </li>
+    <li>
+      The thumbnail image will appear, click on the thumbnail image (to decrypt) or select VIEWER tab.
+    </li>
+    <li>
+      If the image is rotated, click the rotation icon to change - this also changes the thumbnail
+    </li>
+    <li>
+      Method 1 - this uses the standard camera app with a secure file provider interface to produce
+      an encrypted jpg file - without compression.
+    </li>
+  </ul>
+</div>
+
+<div style="padding: 0em 4em;">
+  <h4>How to take pictures - Method 2 - Use the CAMERA tab</h4>
+  <ul style="text-align: left;">
+    <li>
+      Review what keys you have selected in the SETTINGS tab, because one of these keys will be required to view
+      the photograph.
+    </li>
+    <li>
+      Select the directory/folder where you want the encrypted images (set directory, new folder, click folder icon)
+    </li>
+    <li>
+      Click CAMERA tab, select which camera, and other options.
+    </li>
+     <li>
+      This method automatically rotates the image, provides options to control the picture quality
+      (compression), and captures additional meta data (orientation, keys, etc.)
+    </li>
+    <li>
+      Method 2 - this uses a low level camera api with controls on image resolution to
+      produce (multiple) encrypted compressed jpeg or png files, and meta files.
+    </li>
+  </ul>
+</div>
+
+<div style="padding: 2em 1em;"> </div>
+<hr />
+<p style="font-size: 2.5em; text-align: center; padding: 0em;">Keep Your Private Data Private</p>
+<p class="title">and share only what you want - in confidence.</p>

@@ -1,0 +1,100 @@
+<p style="font-size: 2em; padding: 0em 0em 0em 1em;">PhotoPGP can create / view / manage many types of files.</p>
+
+<div style="text-align: center;">
+
+  <app-image-caption imgSrc='assets/img/generic/photographer.png' title='Image Files'
+    caption='Images can be created, viewed, captioned, signed, encrypted, moved around in storage/folders, sent to Google Drive, Gmail, or deleted.  Types:    .jpg    .jpeg    .png'
+    format='width75'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/generic/cyber.png' title='Encrypted Image Files'
+    caption='Encrypted image files can be created, viewed, captioned, signed, decrypted, moved around in storage/folders, sent to Google Drive, Gmail or deleted.  Types:  {image}.pgp (binary PGP), or {image}.asc (ASCII Armor)'
+    format='width75'>
+  </app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/generic/confidential.png' title='Folders'
+    caption='You can create new folders, which can be "opened" (using the INDEX tab). A folder can be captioned, moved around in storage, deleted or copied to a new ZIP file.   '
+    format='width75'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/generic/zip.jpg' title='ZIP Files'
+    caption='You can convert a folder into ZIP file, then back into a folder. ZIP files may also be captioned, moved or deleted.    This enables easy backup to another device or cloud storage.    Type: {folder}.zip   '
+    format='width75'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/generic/data_security.png' title='Encrypted Notes'
+    caption='You can create encrypted text that is associated with: an image, folder, ZIP-file, key-file, or as standalone notes.      Notes can be viewed, signed, and sent to Google Drive, etc.      Types: {filename}.txt.asc'
+    format='width75'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/generic/keys.png' title='Key Files'
+    caption='You can import PGP keys (public key or private key) into OpenKeychain just by clicking on them.  Types: {key}.pgp or {key}.asc '
+    format='width75'></app-image-caption>
+
+</div>
+<div style="padding: 2em 0em;"> </div>
+<hr />
+
+<p class="title">Access to your Android device</p>
+
+<div style="padding: 0em 4em;">
+  <h4>Important Notes:</h4>
+  <ul style="text-align: left;">
+    <li>
+      Android 10+ devices no longer allow apps to access what was Public Shared Storage: Downloads, Pictures, DCIM.
+    </li>
+    <li>
+      These newer devices now require an authorized file management app to copy/move
+      files between Public Shared Storage and Public Internal Storage, e.g.: .../data/com.photopgp.full/files
+    </li>
+    <li>
+      With permissision to write_extenal_storage, older devices are allowed to continue using public shared storage directly.
+    </li>
+  </ul>
+</div>
+
+<div style="text-align: center;">
+
+  <app-image-caption imgSrc='assets/img/icon/ic_folder_shared_black_24dp.png' title='Public Shared Storage'
+    caption='Public places accessible to other apps: Download directory, Pictures Directory, DCIM Directory - No longer available in Android 10+, only available on older devices '
+    format='width75'>
+  </app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/icon/ic_folder_shared_black_24dp.png' title='Public Internal Storage'
+    caption='Public directory where PhotoPGP can always access files. Other apps can access these files too.  This is where you will find the demo private-key'
+    format='width75'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/icon/ic_folder_special_black_24dp.png' title='Private Internal Storage'
+    caption='Private directory where only PhotoPGP can access files.    No other apps can access.    Not available in Demo edition.'
+    format='width75'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/icon/ic_settings_applications_black_24dp.png' title='Internal CACHE'
+    caption='Cache thumbnail images.  Cache file captions.  Session settings.' format='width75'>
+  </app-image-caption>
+</div>
+<div style="padding: 2em 0em;"> </div>
+<hr />
+
+<p class="title">Prerequisites</p>
+<p style="font-size: 1em; text-align: center; padding: 0em;">
+  Here are a few things you'll need before you start using PhotoPGP</p>
+
+<div style="text-align: center;">
+
+  <app-image-caption imgSrc='assets/img/logo/ic_openkeychain.png'
+  title='Install OpenKeychain app'
+    caption='OpenKeychain is an implementation of the OpenPGP cryptographic standard for Android - available from the Google Play Store, F-Droid or GitHub as open-source. Then import your keys into OpenKeychain.'
+    format='width75'>
+  </app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/icon/ic_vpn_key_black_24dp.png'
+    title='Obtain your own private key'
+    caption='You will need to create an OpenPGP private key, if you do not already have one. OpenKeychain is one way to create a key - make sure you keep a backup of this key, off your phone. Demo edition only requires the Demo key provided'
+    format='width75'></app-image-caption>
+
+  <app-image-caption imgSrc='assets/img/icon/ic_cloud_download_black_24dp.png'
+    title='Public Keys of recipients'
+    caption='If you have the full edition, you can download and install public keys to authorize others to access (decrypt) specific files...'
+    format='width75'></app-image-caption>
+
+</div>
+<div style="padding: 2em 1em;"> </div>
+<hr />
+<p style="font-size: 2.5em; text-align: center; padding: 0em;">Keep Your Private Data Private</p>
+<p class="title">and share only what you want - in confidence.</p>
